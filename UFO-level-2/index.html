@@ -38,6 +38,24 @@
                       <li class="filter list-group-item">
                         <label for="date">Enter a Date</label>
                         <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+
+                        <label for="city">City</label>
+                        <input class="form-control" id="city" type="text" placeholder="Enter the city">
+
+                        <label for="country">Country</label>
+                        <select id="country">
+                          <option value="">Select...</option>
+                          <option value="us">United States</option>
+                          <option value="ca">Canada</option>
+                        </select>
+
+                        <label for="state">State</label>
+                        <input class="form-control" id="state" type="text" placeholder="Enter the state">
+
+                        <label for="shape">Shape</label>
+                        <input class="form-control" id="shape" type="text" placeholder="Enter the shape">
+                      
+
                       </li>
                     </ul>
                   </div>
@@ -61,7 +79,7 @@
                   <th class="table-head">Comments</th>
                 </tr>
               </thead>
-              <tbody></tbody>
+              <tbody id="myData"></tbody>
             </table>
           </div>
         </div>
