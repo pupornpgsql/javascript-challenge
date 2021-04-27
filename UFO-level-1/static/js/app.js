@@ -6,13 +6,13 @@ var tableData = data;
 // console.log(tableData);
 
 
-// Creating References to tbody, input and button
+// References to tbody, input and button tages
 var $tbody = d3.select("#myData");
 var button = d3.select("#filter-btn");
 var inputFieldDate = d3.select("#datetime");
 var inputFieldCity = d3.select("#city");
 
-
+// Fields of each property of the object
 var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"]
 
 
