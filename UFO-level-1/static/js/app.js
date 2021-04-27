@@ -44,7 +44,7 @@ function buttonClick() {
 
     var selectedDate = inputFieldDate.property("value").trim();
     // console.log(selectedDate)
-    // trim the inputs 
+    // Erase blanks in the inputs 
     var filterDate = tableData.filter(tableData => tableData.datetime === selectedDate);
 
     // Clear all html from tbody tag

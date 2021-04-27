@@ -2,11 +2,8 @@
 var tableData = data;
 
 
-// Viewing the available data fromt he data.js
-// console.log(tableData);
 
-
-// Creating References to tbody, input and button
+// References to tbody, input and button tages
 var $tbody = d3.select("#myData");
 var button = d3.select("#filter-btn");
 var inputFieldDate = d3.select("#datetime");
@@ -15,6 +12,7 @@ var inputFieldCountry = d3.select("#country");
 var inputFieldState = d3.select("#state");
 var inputFieldShape = d3.select("#shape");
 
+// Fields of each property of the object
 var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"]
 
 
@@ -43,7 +41,7 @@ function buttonClick() {
     */
     d3.event.preventDefault();
 
-
+    // Erase blanks in the inputs 
     var selectedDate = inputFieldDate.property("value").trim();
     var selectedCity = inputFieldCity.property("value").trim();
     var selectedCountry = inputFieldCountry.node().value; 
